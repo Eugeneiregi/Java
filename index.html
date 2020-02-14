@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,56 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
+
 <body>
     <div class="container-fluid">
         <div class=jumbotron>
-    <h1>Akan</h1>
-    <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their 
-        first name as a 'day name' which corresponds 
-        to the day in the week they were born. Here are Ghanian day names.</p>
-    </div>
-    <div class=></div>
-    <form>
-        YEAR:
-        <input type="number" id="date">
-        MONTH:
-        <input type="number" id="date">
-        Day:
-        <input type="number" id="date">
-    </form>
+            <h1>Akan</h1>
+            <p>The Akan people of Ghana frequently name their children after the day of the week they were born and the
+                order in which they were born. These "day names" have further meanings concerning the soul and character
+                of the person. Middle names have considerably more variety and can refer to their birth order, twin
+                status, or an ancestor's middle name.
+
+                This naming tradition is shared throughout West Africa and the African diaspora. During the 18th–19th
+                centuries, slaves in the Caribbean from the region that is modern-day Ghana were referred to as
+                Coromantees. Many of the leaders of slave rebellions had "day names" including Cuffy or Kofi, Cudjoe or
+                Kojo, and Quamina or Kwame/Kwamina.
+
+                Most Ghanaians have at least one name from this system, even if they also have an English or Christian
+                name. Notable figures with day names include Ghana's first president Kwame Nkrumah and former United
+                Nations Secretary-General Kofi Annan.</p>
+        </div>
+        <div>
+            <div class="form row">
+                <div class="col-4">
+
+                </div>
+                <form>
+                    <div>
+                        <label>Year</label><br>
+                        <input type="text" id="year" placeholder="Year born" minlength="4" maxlength="4" step="1" required><br>
+                      </div>
+                      <div>
+                        <label>Month</label><br>
+                        <input type="text" id="month" placeholder="Month born" minlength="1" maxlength="2"required><br>
+                      </div>
+                      <div>
+                        <label>Day</label><br>
+                        <input type="text" id="day" placeholder="Day born" required><br>
+                      </div>
+                      <div>
+                        <label>Gender</label><br>
+                        <input type="radio" id="gender" name="gender" value="male">Male<br>
+                        <input type="radio" id="gender" name="gender" value="female">Female<br>
+                        <input type="submit" onclick="giveAkanName()" value="Submit">
+                      </div>
+                </form>
+
+            </div>
+        </div>
+
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
